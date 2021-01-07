@@ -5,11 +5,9 @@ Home: https://earth.bsc.es/gitlab/es/ClimProjDiags
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-climprojdiags-feedstock/blob/master/LICENSE.txt)
 
 Summary: Set of tools to compute metrics and indices for climate analysis. The package provides functions to compute extreme indices, evaluate the agreement between models and combine theses models into an ensemble. Multi-model time series of climate indices can be computed either after averaging the 2-D fields from different models provided they share a common grid or by combining time series computed on the model native grid. Indices can be assigned weights and/or combined to construct new indices.
-
-
 
 Current build status
 ====================
