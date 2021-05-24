@@ -5,11 +5,9 @@ Home: https://earth.bsc.es/gitlab/es/ClimProjDiags
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-climprojdiags-feedstock/blob/master/LICENSE.txt)
 
 Summary: Set of tools to compute metrics and indices for climate analysis. The package provides functions to compute extreme indices, evaluate the agreement between models and combine theses models into an ensemble. Multi-model time series of climate indices can be computed either after averaging the 2-D fields from different models provided they share a common grid or by combining time series computed on the model native grid. Indices can be assigned weights and/or combined to construct new indices.
-
-
 
 Current build status
 ====================
@@ -38,6 +36,7 @@ Installing `r-climprojdiags` from the `conda-forge` channel can be achieved by a
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `r-climprojdiags` can be installed with:
@@ -108,9 +107,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
