@@ -3,7 +3,7 @@ About r-climprojdiags
 
 Home: https://earth.bsc.es/gitlab/es/ClimProjDiags
 
-Package license: LGPL-3.0-only
+Package license: Apache-2.0
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-climprojdiags-feedstock/blob/master/LICENSE.txt)
 
