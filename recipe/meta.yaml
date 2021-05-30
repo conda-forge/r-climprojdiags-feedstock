@@ -23,14 +23,17 @@ build:
 requirements:
   build:
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
   host:
     - r-base
     - r-pcict
+    - r-climdex.pcic
     - r-multiapply >=2.0.0
     - r-plyr
   run:
     - r-base
     - r-pcict
+    - r-climdex.pcic
     - r-multiapply >=2.0.0
     - r-plyr
 
@@ -41,12 +44,12 @@ test:
 
 about:
   home: https://earth.bsc.es/gitlab/es/ClimProjDiags
-  license: LGPL-3.0-only
+  license: Apache-2.0
   summary: Set of tools to compute metrics and indices for climate analysis. The package provides functions to compute extreme indices, evaluate the agreement between models and combine theses models into an ensemble. Multi-model time series of climate indices can be computed either after averaging the 2-D fields from different
     models provided they share a common grid or by combining time series computed on the model native grid. Indices can be assigned weights and/or combined to construct new indices.
-  license_family: LGPL
+  license_family: Apache
   license_file:
-    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
+    - LICENSE-2.0.txt
 
 extra:
   recipe-maintainers:
