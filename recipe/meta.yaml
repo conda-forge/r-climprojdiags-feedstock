@@ -1,4 +1,4 @@
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,7 +10,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ClimProjDiags_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ClimProjDiags/ClimProjDiags_{{ version }}.tar.gz
-  sha256: 1487c1c6abe230599672cd38d7df1d546b68a3cadb6bbc55d9fc673aaae074b5
+  sha256: 284f785eda56c2f7be005b951251ff104e93bccb2efdd066b481898b9887c1b6
 
 build:
   merge_build_host: true  # [win]
