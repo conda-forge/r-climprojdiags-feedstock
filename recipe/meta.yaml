@@ -1,4 +1,4 @@
-{% set version = "0.3.5" %}
+{% set version = "0.3.6" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/ClimProjDiags_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/ClimProjDiags/ClimProjDiags_{{ version }}.tar.gz
-  sha256: 5311c3ad488e9f7d41947b106e81e30240b13919154561dde3e1f3318ac8094d
+  sha256: cfd5e6a8ef345f7949126242a60523345a02b3e83f9d3cb6365e26583c75f91e
 
 build:
   number: 0
@@ -43,8 +43,8 @@ test:
 about:
   home: https://earth.bsc.es/gitlab/es/ClimProjDiags
   license: Apache-2.0
-  summary: Set of tools to compute metrics and indices for climate analysis. The package provides functions to compute extreme indices, evaluate the agreement between models and combine theses models into an ensemble. Multi-model time series of climate indices can be computed either after averaging the 2-D fields from different
-    models provided they share a common grid or by combining time series computed on the model native grid. Indices can be assigned weights and/or combined to construct new indices.
+  summary: Set of tools to compute metrics and indices for climate analysis. The package provides functions to compute extreme indices, evaluate the agreement between models and combine theses models into an ensemble. Multi-model time series of climate indices can be computed either after averaging the 2-D fields from 
+    different models provided they share a common grid or by combining time series computed on the model native grid. Indices can be assigned weights and/or combined to construct new indices.
   license_family: Apache
   license_file:
     - LICENSE-2.0.txt
